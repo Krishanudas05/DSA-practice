@@ -30,6 +30,6 @@ class Main {
         N4.right = N9;
 
         Btree.root = N1;
-        Btree.preOrder(Btree.root);
+        Btree.InOrder(Btree.root);
     }
 }

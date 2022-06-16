@@ -5,13 +5,14 @@ public class BinaryTree {
     public BinaryTree() {
         this.root = null;
     }
-    void preOrder(BinaryNode node) {
+    void InOrder(BinaryNode node) {
         if(node == null) {
             return;
         }
+        
+        InOrder(node.left);
         System.out.print(node.value + " ");
-        preOrder(node.left);
-        preOrder(node.right);
+        InOrder(node.right);
     }
     
 
